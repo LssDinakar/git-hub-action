@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} learning github actions
 on: [push]
 jobs:
   check-bats-version:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps: 
       - name: Sourcode checkout
         uses: actions-checkout@v6
@@ -14,4 +14,4 @@ jobs:
       - name: Install bats  
         run: npm install -g bats
       - name: Checking bat version
-        run: bats -v
+        run: bats -v  
