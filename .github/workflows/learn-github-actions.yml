@@ -3,14 +3,14 @@ run-name: ${{ github.actor }} learning github actions
 jobs:
   check-bats-version:
   run-on: ubuntu-latest
-  steps: 
-    - name: Sourcode checkout
-      uses: actions-checkout@v6
-    - name: Setup node js Environment
-      uses: actions/setup-node@v7
-      with: 
-      node-version: '24'
-    - name: Install bats  
-      run: npm install -g bats
-    - name: Checking bat version
-      run: bats -v
+    steps: 
+      - name: Sourcode checkout
+        uses: actions-checkout@v6
+      - name: Setup node js Environment
+        uses: actions/setup-node@v7
+        with: 
+        node-version: '24'
+      - name: Install bats  
+        run: npm install -g bats
+      - name: Checking bat version
+        run: bats -v
