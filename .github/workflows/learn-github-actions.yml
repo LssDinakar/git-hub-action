@@ -3,11 +3,7 @@ run-name: ${{ github.actor }} learning github actions
 on: [push]
 jobs:
   check-bats-version:
-<<<<<<< HEAD
     runs-on: ubuntu-latest
-=======
-  run-on: ubuntu-latest
->>>>>>> parent of 38bea49 (overided issue in yaml file modified run-on indentations)
     steps: 
       - name: Sourcode checkout
         uses: actions/checkout@v6
